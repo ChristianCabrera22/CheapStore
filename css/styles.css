@@ -1,0 +1,161 @@
+/*reseteo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: black;
+}
+/* LOGO y MENUS*/
+header {
+    background-color: black;
+    padding: 20px;
+    position: flex;
+    width: 100%;
+    color: white;
+    display: flex;
+   
+}
+/*img Logo*/
+header img {
+    display: inline;
+    width: 200px;
+    height: auto;
+}
+/*navegacion <<<<--- */
+header nav {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+header ul li {
+    list-style: none;
+    display: inline;
+    position: relative;
+}
+
+header ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+header ul li a:hover {
+    background-color: rgb(238, 8, 35);
+}
+/*-->> Fin navegacion*/
+
+/*=== MAIN === contenido bienvenida    <<<*/ 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 450px;
+    padding: 3%;
+    background-image: url('../images/sushi.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+main {
+    color: white;
+}
+main h1 {
+    font-weight: bold;
+}
+main p,
+main a {
+    font-size:x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.productos {
+    color: white;
+    background-image: url('../images/sushi2.jpg');
+}
+.servicios {
+    padding: 80px;
+    color: white;
+}
+.rrhh {
+    padding: 100px;
+    color: white;
+}
+.formulario {
+    padding: 100px;
+    color: white;
+}
+.faqs {
+    padding: 120px;
+    color: white;
+}
+.cuerpo-faqs {
+    padding: 200px;
+    color: white;
+    font-size: x-large;
+}
+/*>>> Fin contenido bienvenida */
+.cont {
+    padding: 50px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+.cont div {
+    color: white;
+    width: 272px;
+    height: 363px;
+    border: 1px solid white;
+    background: rgb(0, 0, 0);
+
+}
+/*Pie de pagina*/
+.pie {
+    background-color: rgb(36, 35, 35);
+    margin-top: 40px;
+    color: white;
+}
+.pie-box{
+    padding: 20px;
+    gap: 100px;
+    display: flex;
+    border: 2px solid white;
+}
+/* Ubicacion en map */
+.map {
+    color: white;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+  text-align: center;
+  font-size: 30px;
+  top: 10px;
+}
+.map iframe {
+     left: 10px;;
+    top: 50px;;
+    height:90%;
+    width:98%;
+    position:absolute;
+}
+.whatsapp {
+    position: fixed;
+    bottom: 15%;
+    right: 1;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp img {
+    width: 8%;
+    height: auto;
+
+}
+.whatsapp img:hover {
+    width: 9%;
+}
