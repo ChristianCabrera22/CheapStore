@@ -8,48 +8,118 @@
 body {
     background-color: black;
 }
-/* LOGO y MENUS*/
-header {
+
+/* Barra navegación*/
+.barraNav a{
     background-color: black;
-    padding: 20px;
-    position: flex;
+    padding: 15px;
     width: 100%;
     color: white;
-    display: flex;
-   
+    display: inline;
+    text-decoration: none
+    
 }
 /*img Logo*/
-header img {
-    display: inline;
-    width: 200px;
+.barraNav img {
+    width: 40%;
     height: auto;
+    min-width: 350px;
 }
 /*navegacion <<<<--- */
-header nav {
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 100px;
+
+.clear:after {
+    clear: both;
 }
-header ul li {
-    list-style: none;
-    display: inline;
+
+.clear {
+    *zoom: 1;
+}
+
+a#pull {
+    display: none;
+    transition:all .5s;
+}
+nav {
+    height: 40px;
+    width: 100%;
     position: relative;
 }
 
-header ul li a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 15px;
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+    margin-top: 10px;
 }
-header ul li a:hover {
-    background-color: rgb(238, 8, 35);
+
+nav li {
+    display: inline;
+    float: center;
 }
+
+nav a {
+    color: #FFF;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    line-height: 47px;
+    transition:all .5s;
+}
+
+nav a:hover, nav a:active {
+    background-color: rgb(218, 3, 3);
+    transition:all .5s;
+}
+@media only screen and (max-width : 600px) {
+    nav {
+        border-bottom: 0;
+        height: auto;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+        width: 100%;
+    }
+
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+     }
+
+    nav a#pull {
+        display: block;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        transition:all .5s;
+    }
+
+    nav a#pull:after {
+        content:"";
+        background: url('../images/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        transition:all .5s;
+    }
+}
+
 /*-->> Fin navegacion*/
 
 /*=== MAIN === contenido bienvenida    <<<*/ 
-main {
+.principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,22 +131,38 @@ main {
     background-position: center center;
     background-size: cover;
     color: white;
+
 }
-main {
-    color: white;
-}
-main h1 {
+.principal h1 {
     font-weight: bold;
+    animation-duration: 3s;
+    animation-name: slidein;
+    
 }
-main p,
-main a {
+.principal p,
+.principal a {
     font-size:x-large;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation-duration: 5s;
+    animation-name: slidein;
 }
 .productos {
     color: white;
     background-image: url('../images/sushi2.jpg');
 }
+/* animacion */
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 .servicios {
     padding: 80px;
     color: white;
@@ -113,18 +199,8 @@ main a {
     background: rgb(0, 0, 0);
 
 }
-/*Pie de pagina*/
-.pie {
-    background-color: rgb(36, 35, 35);
-    margin-top: 40px;
-    color: white;
-}
-.pie-box{
-    padding: 20px;
-    gap: 100px;
-    display: flex;
-    border: 2px solid white;
-}
+/* Footer Pie de pagina*/
+
 /* Ubicacion en map */
 .map {
     color: white;
@@ -154,8 +230,14 @@ main a {
 .whatsapp img {
     width: 8%;
     height: auto;
+    transition:all .5s;
 
 }
 .whatsapp img:hover {
+
+    transition:all .5s;
     width: 9%;
+}
+.invertir {
+    filter: invert(100%);
 }
