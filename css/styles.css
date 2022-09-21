@@ -8,7 +8,10 @@
 body {
     background-color: black;
 }
-
+.salto {
+    display: flex;
+    background-color: white;
+}
 /* Barra navegación*/
 .barraNav a{
     background-color: black;
@@ -16,7 +19,8 @@ body {
     width: 100%;
     color: white;
     display: inline;
-    text-decoration: none
+    text-decoration: none;
+    font-size: large;
     
 }
 /*img Logo*/
@@ -131,18 +135,18 @@ nav a:hover, nav a:active {
     background-position: center center;
     background-size: cover;
     color: white;
-
+    /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
+    
 }
 .principal h1 {
     font-weight: bold;
     animation-duration: 3s;
     animation-name: slidein;
-    
+    font-family:sans-serif;
 }
 .principal p,
 .principal a {
     font-size:x-large;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     animation-duration: 5s;
     animation-name: slidein;
 }
@@ -197,7 +201,7 @@ nav a:hover, nav a:active {
     height: 363px;
     border: 1px solid white;
     background: rgb(0, 0, 0);
-
+    text-align: center;
 }
 /* Footer Pie de pagina*/
 
