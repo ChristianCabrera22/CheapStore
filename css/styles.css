@@ -187,8 +187,9 @@ nav a:hover, nav a:active {
     animation-name: slidein;
     font-family:sans-serif;
 }
-.faqs p,
+.faqs span,
 .faqs a {
+    display: inline;
     font-size:large;
     animation-duration: 3s;
     animation-name: slidein;
@@ -329,23 +330,21 @@ nav a:hover, nav a:active {
 }
 .whatsapp {
     position: fixed;
-    bottom: 15%;
+    bottom: 5%;
     right: 1;
-    padding: 2%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 2%;  
+    margin-left: 90%;
 }
 .whatsapp img {
-    width: 8%;
+    width: 60%;
     height: auto;
     transition:all .5s;
-
 }
+
 .whatsapp img:hover {
 
     transition:all .5s;
-    width: 9%;
+    width: 65%;
 }
 .invertir {
     filter: invert(100%);
