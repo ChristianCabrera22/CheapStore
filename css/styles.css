@@ -154,19 +154,7 @@ nav a:hover, nav a:active {
     color: white;
     background-image: url('../images/sushi2.jpg');
 }
-/* animacion */
 
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 .servicios {
     padding: 80px;
     color: white;
@@ -212,6 +200,96 @@ nav a:hover, nav a:active {
     font-size: x-large;
 }
 /*>>> Fin contenido bienvenida */
+.productosBienvenida {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    height: 450px;
+    background-image: url('../images/prod.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 80px;
+}
+.productosBienvenida h1 {
+    font-weight: bold;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    font-family:sans-serif;
+
+}
+.productosBienvenida p,
+.productosBienvenida a {
+    font-size:large;
+    animation-duration: 3s;
+    animation-name: slidein;
+ }
+
+.catalogo {
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding: 1%;
+    font-size: x-large;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(77,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    transition: 2s;
+    }
+.catalogo:hover {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(195,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    transition: 2s;
+}
+.catalogo a {
+    color: white;
+    text-decoration: none;
+    transition: 2s;
+}
+.catalogo a:hover {
+    font-size: xx-large;
+}
+
+ .cont_grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-top: 100px;
+    padding: 20px;
+    
+  }
+ .cont_grid div {
+    border-radius: 15px;
+    border: 3px solid rgb(97, 97, 97);
+    color: white;
+    padding: 4px;
+    transition: 1s;
+}
+.cont_grid img {
+    width: 100%;
+    height: auto;
+}
+.cont_grid p {
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cont_grid div:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    transition: 1s;
+}
+@media (max-width: 550px) {
+    .cont_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 .cont {
     padding: 50px;
     gap: 30px;
@@ -282,3 +360,16 @@ nav a:hover, nav a:active {
     height:70px;
     transition: 1s;
 }
+/* animacion */
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
