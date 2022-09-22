@@ -336,7 +336,7 @@ nav a:hover, nav a:active {
     margin-left: 90%;
 }
 .whatsapp img {
-    width: 60%;
+    width: 80%;
     height: auto;
     transition:all .5s;
 }
@@ -344,7 +344,7 @@ nav a:hover, nav a:active {
 .whatsapp img:hover {
 
     transition:all .5s;
-    width: 65%;
+    width: 85%;
 }
 .invertir {
     filter: invert(100%);
