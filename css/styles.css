@@ -373,7 +373,55 @@ nav a:hover, nav nav a:active {
   transition: 1s;
 }
 
-/* animaciones */
+.servicios {
+  text-align: center;
+}
+
+.serviGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  text-align: center;
+  color: black;
+}
+.serviGrid div {
+  border-radius: 15px;
+  background-color: white;
+  transition: 1s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.serviGrid div h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.serviGrid div p {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(80, 80, 80);
+}
+.serviGrid div img {
+  width: 100%;
+  height: auto;
+  border-radius: 3%;
+}
+.serviGrid div:hover {
+  transform: scale(0.95);
+  transition: 1s;
+}
+.serviGrid .serviDesc {
+  border-radius: 0%;
+  border: 0;
+}
+
+@media (max-width: 550px) {
+  .serviGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+}
+/* animaciones --- pasar a include(mixin) */
 @-webkit-keyframes slidein {
   from {
     margin-left: 100%;

@@ -1,13 +1,4 @@
 // sass nuevo, en proceso.....
-
-
-
-
-
-
-
-
-// css crudo (sin procesar) 
 /*reseteo*/
 * {
     margin: 0;
@@ -19,7 +10,6 @@ body {
     background-color: black;
     
 }
-
 /* Barra navegación*/
 .barraNav { 
     background-color: black;
@@ -367,8 +357,54 @@ nav {
         transition: 1s;
     }
 }
+.servicios {
+    text-align: center;
+}
+.serviGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    text-align: center;
+    color: black;
+    div {
+        border-radius: 15px;
+        background-color: white;
+        transition: 1s;
+        -webkit-animation: fadeIn 1.0s;
+                animation: fadeIn 1.0s;
+        h3 {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: lighter;
+            color: rgb(80, 80, 80);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 3%;
+        }
+        &:hover {
+            transform: scale(0.95);
+            transition: 1s;
+        }
+    }
+    .serviDesc {
+        border-radius: 0%;
+        border: 0;
+    }
+}
+@media (max-width: 550px) {
+    .serviGrid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+}  
 
-/* animaciones */
+/* animaciones --- pasar a include(mixin) */
 
 @keyframes slidein {
     from {
