@@ -1,3 +1,13 @@
+// sass nuevo, en proceso.....
+
+
+
+
+
+
+
+
+// css crudo (sin procesar) 
 /*reseteo*/
 * {
     margin: 0;
@@ -9,13 +19,11 @@ body {
     background-color: black;
     
 }
-.salto {
-    display: flex;
-    background-color: white;
-}
+
 /* Barra navegación*/
-.barraNav a{
+.barraNav { 
     background-color: black;
+    a{
     padding: 15px;
     width: 100%;
     color: white;
@@ -24,13 +32,15 @@ body {
     font-size: large;
     /*animacion*/
      animation: fadeIn 1.5s;
+    }
+    img {
+        width: 40%;
+        height: auto;
+        min-width: 350px;
+    }
 }
 /*img Logo*/
-.barraNav img {
-    width: 40%;
-    height: auto;
-    min-width: 350px;
-}
+.barraNav 
 /*navegacion <<<<--- */
 
 .clear:after {
@@ -49,76 +59,68 @@ nav {
     height: 40px;
     width: 100%;
     position: relative;
+    ul {
+        padding: 0;
+        margin: 0 auto;
+        width: 600px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    li {
+        display: inline;
+        float: center;
+    }
+    a {
+        color: #FFF;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        line-height: 47px;
+        transition:all .5s;
+    }
+    a:hover, nav a:active {
+        background-color: rgb(218, 3, 3);
+        transition:all .5s;
+    }
 }
 
-nav ul {
-    padding: 0;
-    margin: 0 auto;
-    width: 600px;
-    height: 40px;
-    margin-top: 10px;
-}
-
-nav li {
-    display: inline;
-    float: center;
-}
-
-nav a {
-    color: #FFF;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    line-height: 47px;
-    transition:all .5s;
-}
-
-nav a:hover, nav a:active {
-    background-color: rgb(218, 3, 3);
-    transition:all .5s;
-}
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 600px) {      //responsive
     nav {
         border-bottom: 0;
         height: auto;
-    }
-
-    nav ul {
-        display: none;
-        height: auto;
-        width: 100%;
-    }
-
-    nav li {
-        width: 50%;
-        float: left;
-        position: relative;
-    }
-
-    nav a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-     }
-
-    nav a#pull {
-        display: block;
-        background-color: black;
-        width: 100%;
-        position: relative;
-        transition:all .5s;
-    }
-
-    nav a#pull:after {
-        content:"";
-        background: url('../images/nav-icon.png') no-repeat;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-        transition:all .5s;
+        ul {
+            display: none;
+            height: auto;
+            width: 100%;
+        }
+        li {
+            width: 50%;
+            float: left;
+            position: relative;
+        }
+        a {
+            text-align: left;
+            width: 100%;
+            text-indent: 25px;
+         }
+         a#pull {
+            display: block;
+            background-color: black;
+            width: 100%;
+            position: relative;
+            transition:all .5s;
+        }
+        a#pull:after {
+            content:"";
+            background: url('../images/nav-icon.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            transition:all .5s;
+        }
     }
 }
 
@@ -139,20 +141,19 @@ nav a:hover, nav a:active {
     background-size: cover;
     color: white;
     /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
-    
-}
-.principal h1 {
-    font-weight: bold;
-    animation-duration: 3s;
-    animation-name: slidein;
-    font-family:sans-serif;
-}
-.principal p,
-.principal a {
+    h1 {
+        font-weight: bold;
+        animation-duration: 3s;
+        animation-name: slidein;
+        font-family:sans-serif;
+    }
+    p, a {
     font-size:x-large;
     animation-duration: 5s;
     animation-name: slidein;
 }
+}
+
 .productos {
     color: white;
     background-image: url('../images/sushi2.jpg');
@@ -183,20 +184,18 @@ nav a:hover, nav a:active {
     background-size: cover;
     color: white;
     padding: 80px;
-}
-
-.faqs h1 {
-    font-weight: bold;
-    animation-duration: 1.5s;
-    animation-name: slidein;
-    font-family:sans-serif;
-}
-.faqs span,
-.faqs a {
+    h1 {
+        font-weight: bold;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+        font-family:sans-serif;
+    }
+    span, a {
     display: inline;
     font-size:large;
     animation-duration: 3s;
     animation-name: slidein;
+    }
 }
 
 .cuerpo-faqs {
@@ -218,20 +217,19 @@ nav a:hover, nav a:active {
     background-size: cover;
     color: white;
     padding: 80px;
-}
-.productosBienvenida h1 {
-    font-weight: bold;
-    animation-duration: 1.5s;
-    animation-name: slidein;
-    font-family:sans-serif;
-
-}
-.productosBienvenida p,
-.productosBienvenida a {
+    h1 {
+        font-weight: bold;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+        font-family:sans-serif;
+    
+    }
+    p, a {
     font-size:large;
     animation-duration: 3s;
     animation-name: slidein;
  }
+}
 
 .catalogo {
     border: 1px solid white;
@@ -244,20 +242,21 @@ nav a:hover, nav a:active {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(77,0,0,1) 0%, rgba(0,0,0,1) 100%);
     transition: 2s;
+    &:hover {
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(195,0,0,1) 0%, rgba(0,0,0,1) 100%);
+        transition: 2s;
     }
-.catalogo:hover {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(195,0,0,1) 0%, rgba(0,0,0,1) 100%);
-    transition: 2s;
+    a {
+        color: white;
+        text-decoration: none;
+        transition: 2s;
+        &:hover {
+            font-size: xx-large;
+        }
+    }
 }
-.catalogo a {
-    color: white;
-    text-decoration: none;
-    transition: 2s;
-}
-.catalogo a:hover {
-    font-size: xx-large;
-}
+
 
  .cont_grid {
     display:grid;
@@ -266,32 +265,32 @@ nav a:hover, nav a:active {
     grid-row-gap: 50px;
     margin-top: 100px;
     padding: 20px;
-    
+    div {
+        border-radius: 15px;
+        border: 3px solid rgb(97, 97, 97);
+        color: white;
+        padding: 4px;
+        transition: 1s;
+        animation: fadeIn 1.5s;
+        &:hover {
+            -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+            transition: 1s;
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+    p {
+        text-align: center;
+        margin-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
   }
- .cont_grid div {
-    border-radius: 15px;
-    border: 3px solid rgb(97, 97, 97);
-    color: white;
-    padding: 4px;
-    transition: 1s;
-    animation: fadeIn 1.5s;
-}
-.cont_grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-.cont_grid p {
-    text-align: center;
-    margin-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.cont_grid div:hover {
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1);
-    transition: 1s;
-}
-@media (max-width: 550px) {
+
+  @media (max-width: 550px) {
     .cont_grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -303,14 +302,14 @@ nav a:hover, nav a:active {
     gap: 30px;
     display: flex;
     justify-content: center;
-}
-.cont div {
-    color: white;
-    width: 272px;
-    height: 363px;
-    border: 1px solid white;
-    background: rgb(0, 0, 0);
-    text-align: center;
+    div {
+        color: white;
+        width: 272px;
+        height: 363px;
+        border: 1px solid white;
+        background: rgb(0, 0, 0);
+        text-align: center;
+    }
 }
 /* Footer Pie de pagina*/
 
@@ -323,14 +322,15 @@ nav a:hover, nav a:active {
   text-align: center;
   font-size: 30px;
   top: 10px;
+  iframe {
+    left: 10px;;
+   top: 50px;;
+   height:90%;
+   width:98%;
+   position:absolute;
 }
-.map iframe {
-     left: 10px;;
-    top: 50px;;
-    height:90%;
-    width:98%;
-    position:absolute;
 }
+
 .map-contac {
     width:auto; 
     height:450px;
@@ -341,32 +341,34 @@ nav a:hover, nav a:active {
     right: 1;
     padding: 2%;  
     margin-left: 90%;
-}
-.whatsapp img {
-    width: 50px;
-    height: 50px;
-    transition:all .5s;
+    img {
+        width: 50px;
+        height: 50px;
+        transition:all .5s;
+        &:hover {
+            transition:all .5s;
+            width: 55px;
+            height: 55px;
+        }
+    }
 }
 
-.whatsapp img:hover {
-    transition:all .5s;
-    width: 55px;
-    height: 55px;
-}
 .invertir {
     filter: invert(100%);
 }
+
 .icono {
     width:63px;
     height:63px;
     transition: 1s;
+    &:hover{
+        width:70px;
+        height:70px;
+        transition: 1s;
+    }
 }
-.icono:hover{
-    width:70px;
-    height:70px;
-    transition: 1s;
-}
-/* animacion */
+
+/* animaciones */
 
 @keyframes slidein {
     from {
