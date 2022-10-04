@@ -342,10 +342,9 @@ nav a:hover, nav nav a:active {
 
 .whatsapp {
   position: fixed;
-  bottom: 5%;
-  right: 1;
-  padding: 2%;
-  margin-left: 90%;
+  bottom: 15px;
+  right: 15px;
+  z-index: 6;
 }
 .whatsapp img {
   width: 50px;
