@@ -10,6 +10,7 @@
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/tooltip.css">
+    <link rel="stylesheet" href="../css/aos.css">
 </head>
 <body>
     <!-- menu navegador -->
@@ -28,10 +29,32 @@
     </header>
     <!-- Presentacion index -->
     <div class="servicios">
-        <h1>Ofrecemos envios a todo el Pais</h1>
+        <h1>Hola! Entendemos tu necesidad</h1>
         <p>Llegamos donde nadie mas puede!</p>
     </div>
   <section>
+    <div class="serv" data-aos="slide-right" data-aos-delay="100">
+      <img src="../images/servicios/24hs.png" alt="Envio 24 hs">
+      <div class="envioDesc">
+        <h2>Envios 24hs!</h2>
+        <p>Hacemos envios express, porque entendemos la urgencia!</p>
+      </div>
+    </div>
+    <div class="serv" data-aos="slide-left" data-aos-delay="100">
+        <div class="envioDesc">
+        <h2>Contra Factura</h2>
+        <p>Primero entregamos, luego cobramos..! Tenemos confianza en nuestros clientes</p>
+        </div>
+        <img class="img2" src="../images/servicios/mano.jpg" alt="Contra Factura">
+    </div>
+    <div class="serv" data-aos="slide-up" data-aos-delay="100">
+      <img class="img2" src="../images/servicios/mayorista.jpg" alt="venta mayorista">
+      <div class="envioDesc">
+      <h2>Venta por Mayor</h2>
+      <p>Hacemos descuentos en compras Mayoristas, no dudes en consultarnos!</p>
+      </div>
+      
+  </div>
        <!-- map -->
        <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37252.6690539616!2d-58.75479528272631!3d-34.3835023096636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f8d5a842409%3A0x2378e6e29238429!2sMercado%20de%20Maschwitz!5e0!3m2!1ses!2sar!4v1661824166290!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -110,5 +133,9 @@
     </div>
 </footer>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+// A medida que se iba creando el sitio se trato el resposive desde la base
+
+@media only screen and (max-width : 600px) {      //barra nav
+    nav {
+        border-bottom: 0;
+        height: auto;
+        ul {
+            display: none;
+            height: auto;
+            width: 100%;
+        }
+        li {
+            width: 50%;
+            float: left;
+            position: relative;
+        }
+        a {
+            text-align: left;
+            width: 100%;
+            text-indent: 25px;
+         }
+         a#pull {
+            display: block;
+            background-color: black;
+            width: 100%;
+            position: relative;
+            transition:all .5s;
+        }
+        a#pull:after {
+            content:"";
+            background: url('../images/nav-icon.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            transition:all .5s;
+        }
+    }
+}
+@media (max-width: 550px) { // productos
+    .cont_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 550px) { // index Servicios
+    .serviGrid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+}  

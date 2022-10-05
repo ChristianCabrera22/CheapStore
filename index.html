@@ -8,8 +8,9 @@
     <link rel="shortcut icon" href="./images/icono.jpg" type="image/x-icon">
     <script src="./js/jquery.min.js"></script>
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css"> 
     <link rel="stylesheet" href="./css/tooltip.css">
+    <link rel="stylesheet" href="./css/aos.css">
 </head>
 <body>
     <!-- menu navegador -->
@@ -21,7 +22,7 @@
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/servicios.html">Servicios</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/rrhh.html">Sumate al equipo</a></li><br clear="all" />
+                <li><a href="./pages/rrhh.html">Sumate al equipo</a></li><div class="brclear"></div>
             </ul>
             <a id="pull" href="#"></a>
         </nav></div>
@@ -58,37 +59,37 @@
         </button>
       </div>
   </div>
-<div class="container">
-  
-</div>
+
 </section>
 <!--Servicios-->
-<div class="servicios">
+
+<div class="servicios" data-aos="fade-up">
   <h3>Servicios</h3>
   <p>Hola! Somos una empresa emergente que se dedica a vender y distribuir productos alimenticios para grandes cadenas de Sushi, nuestros valores se forman en el compromiso con el cliente al obtener un producto de calidad, en tiempo y forma, cumpliendo siempre con las espectativas de las grandes cadenas que depositan su confianza en nosotros..</p>
 </div>
   <div class="serviGrid">
-      <div>
+      <div data-aos="flip-down" data-aos-delay="10">
         <img src="./images/servicios/exce.jpg" alt="excelencia">
         <h3>Excelencia</h3>
           <p>Tenemos como misión satisfacer con excelencia sus necesidades a través del servicio, asesoramiento y calidad.</p>
       </div>
-      <div>
+      <div data-aos="flip-down" data-aos-delay="100">
         <img src="./images/servicios/cliente.jpg" alt="cliente">
         <h3>Clientes sastifechos.</h3>
           <p>Contamos con una cartera de más de 500 clientes activos a lo largo de la provincia de Bs. As.</p>
       </div>
-      <div>
+      <div data-aos="flip-down" data-aos-delay="150">
         <img src="./images/servicios/pilares.jpg" alt="pilares">
        <h3>Pilares de trabajo</h3>
         <p>Ofrecemos un servicio de excelencia basado en Nuestros pilares fundamentales: Ética, profesionalismo y vocación de servicio</p>
       </div>
-      <div>
+      <div data-aos="flip-down" data-aos-delay="200">
         <img src="./images/servicios/valor.jpg" alt="valor">
         <h3>Valor agregado</h3>
          <p>Nuestro principal capital son los colaboradores y proveedores que conforman nuestra familia y hacen posible el desarrollo del día a día.</p>
       </div>
     </div>
+
 <!--icono del whatsapp-->
 <div class="whatsapp">
   <a tooltip="Envianos un Whatsapp" flow="left" href="https://wa.me/+5491153440237"><img src="./images/whatsapp-logo.png" alt="Logo"></a>
@@ -160,6 +161,11 @@
       </ul>
     </div>
 </footer>
+
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
