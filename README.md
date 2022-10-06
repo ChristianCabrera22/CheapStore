@@ -1,4 +1,4 @@
-# CheapStore | Pre-entrega 2 
+# CheapStore | Pre-entrega 3 
 
 Bienvenido a mi repositorio, este trabajo está en desarrollo para el curso web de CoderHouse..
 
