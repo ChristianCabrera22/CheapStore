@@ -372,94 +372,6 @@ nav a:hover, nav nav a:active {
   border: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  nav {
-    border-bottom: 0;
-    height: auto;
-  }
-  nav ul {
-    display: none;
-    height: auto;
-    width: 100%;
-  }
-  nav li {
-    width: 50%;
-    float: left;
-    position: relative;
-  }
-  nav a {
-    text-align: left;
-    width: 100%;
-    text-indent: 25px;
-  }
-  nav a#pull {
-    display: block;
-    background-color: black;
-    width: 100%;
-    position: relative;
-    transition: all 0.5s;
-  }
-  nav a#pull:after {
-    content: "";
-    background: url("../images/nav-icon.png") no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    transition: all 0.5s;
-  }
-}
-@media (max-width: 550px) {
-  .cont_grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 550px) {
-  .serviGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 10px;
-  }
-}
-/* animaciones ---  */
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .register {
   background: -webkit-linear-gradient(left, #000000, #858585);
   margin-top: 3%;
@@ -574,4 +486,93 @@ nav a:hover, nav nav a:active {
   margin-top: 8%;
   margin-bottom: -15%;
   color: #495057;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    border-bottom: 0;
+    height: auto;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+  nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+  }
+  nav a#pull {
+    display: block;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    transition: all 0.5s;
+  }
+  nav a#pull:after {
+    content: "";
+    background: url("../images/nav-icon.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 550px) {
+  .cont_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .serviGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+}
+/* animaciones ---  */
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */
