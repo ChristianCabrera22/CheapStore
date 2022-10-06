@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheapStore Distribuidora - RRHH</title>
+    <meta name="description" content="Distribuidora sushi, Trabaja con Nosotros">
+    <meta name="keywords" content="alimentos, rrhh, sushi, cv, mail">
     <link rel="shortcut icon" href="../images/icono.jpg" type="image/x-icon">
     <script src="../js/jquery.min.js"></script>
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,29 +34,78 @@
         <p>Nuevas oportunidades te esperan, completa el formulario:</p>
     </div>
   <section>
-    <div class="formulario">
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-         <li>
-           <label for="name">Nombre:</label>
-           <input type="text" id="name" name="">
-         </li>
-         <li>
-           <label for="mail">Correo electrónico:</label>
-           <input type="email" id="mail" name="">
-         </li>
-         <li>
-           <label for="msg">Mensaje:</label>
-           <textarea id="msg" name=""></textarea>
-           <input type="submit" value="Enviar"></input>
-         </li>
-        </ul>
-       </form>
-    </div>
+    <div class="container register">
+      <div class="row">
+          <div class="col-md-3 register-left">
+              <h3>Te estamos buscando!</h3>
+              <p class="font-italic">Conoce nuestras propuestas de trabajo:</p>
+              <a href="https://www.linkedin.com/in/christian-cabrera-468011212/" target="_blank"><img src="../images/LinkedIn-emblema.jpg" alt=""></a>
+          </div>
+          <div class="col-md-9 register-right">
+              <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <h3 class="register-heading">Completa con tus datos:</h3>
+                      <div class="row register-form">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Nombre *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Apellido *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <input type="password" class="form-control" placeholder="Contraseña*" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <input type="password" class="form-control"  placeholder="Confirmar Contraseña *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <div class="maxl">
+                                      <label class="radio inline"> 
+                                          <input type="radio" name="gender" value="male" checked>
+                                          <span> Hombre </span> 
+                                      </label>
+                                      <label class="radio inline"> 
+                                          <input type="radio" name="gender" value="female">
+                                          <span>Mujer </span> 
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="email" class="form-control" placeholder="Email *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Telefono *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <select class="form-control">
+                                      <option class="hidden"  selected disabled>Seleccione un puesto de interes</option>
+                                      <option>Administrativo</option>
+                                      <option>Tecnologia</option>
+                                      <option>Logistica</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                <p class="mt-2">Cargue su CV:</p>
+                                  <input type="file" class="form-control" placeholder="CV *" value="" />
+                              </div>
+                              <input type="submit" class="btnRegister"  value="Enviar"/>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+  </div>
+
   </section>
   <!--icono del whatsapp-->
   <div class="whatsapp">
-    <a tooltip="Envianos un Whatsapp" flow="left" href="https://wa.me/+5491153440237"><img src="../images/whatsapp-logo.png" alt="Logo"></a>
+    <a tooltip="Envianos un Whatsapp" flow="left" href="https://wa.me/+5491153440237" target="_blank"><img src="../images/whatsapp-logo.png" alt="Logo"></a>
 
 </div>
 <footer>
